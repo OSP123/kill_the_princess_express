@@ -1,10 +1,26 @@
+<!--
+Here is the main HTML where handlebars will render to
+ -->
+
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <title>Example App</title>
-</head>
-<body>
-    {{{body}}}
-</body>
-</html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
+		<title>MVC Tasks!</title>
+	</head>
+	<body>
+		<p>
+			{{#unless logged_in}}
+				<a href="/users/sign-in">Sign In</a>
+				<a href="/users/new">Sign Up</a>
+			{{/unless}}
+
+			{{#if logged_in}}
+				Welcome {{email}}! <br>
+				You are user {{user_id}}.<br>
+				<a href="/users/sign-out">Sign Out</a>
+			{{/if}}
+		</p>
+		{{{ body }}}
+	</body>
+</HTML>
