@@ -1,13 +1,19 @@
-# README For This Project Management Tool App
+# README For Kill Da Princess Application
 
-This repository demonstrates the usage of sequelize within an express application.
-The implemented logic is a simple task tracking tool.
+This repository demonstrates the usage of various technolgies for building a game application in the MVC architectural style. The technologies will be based on the Node.js engine and will utilize the Express.js framework.
+
+Other technologies include:
+
+- Bootstrap for templating
+- Handlebars for view engine (used with Bootstrap)
+- Sequelize as ORM
+- MySQL as the database
 
 1. create a database called projects_db
 
 `mysql -u root`
 
-`create database projects_db;`
+`create database monster_db;`
 
 2. install modules in package.json
 

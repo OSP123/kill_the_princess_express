@@ -1,13 +1,27 @@
-<h1>Project Management Tool</h1>
+<!--Video Section-->
+<div class="container-fluid">
+    <div class="embed-responsive embed-responsive-16by9">
+        <div id="background">
+	         <div id="login_header">
+							<p>
+								{{#unless logged_in}}
+									<a href="/users/signup-signin">Sign In or Sign Up</a>
+								{{/unless}}
 
-<h2>Create a new person</h2>
+								{{#if logged_in}}
+									Welcome {{email}}! <br>
+									You are user {{user_id}}.<br>
+									<a href="/users/sign-out">Sign Out</a>
+								{{/if}}
+							</p>
+						</div>
+	          <iframe width="100" height="100" src="http://www.youtube.com/embed/o2F1_I8H7Qk?origin=http://localhost.com:3000?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1&amp;loop=1&amp;playlist=Rk6_hdRtJOE&amp;enablejsapi=1&version=3" id="i_song_name_i"></iframe>
+				</div>
+    </div>          
+</div>
 
 {{#if logged_in}}
-  <form action="/people/create" method="POST">
-    <input type="text" name="name">
 
-    <input type="submit">
-  </form>
 {{/if}}
 
 {{#unless logged_in}}
@@ -16,34 +30,4 @@
   </p>
 {{/unless}}
 
-<h2>People</h2>
 
-<ul>
-  {{#each people}}
-    <li>
-      {{this.name}}
-      {{#if ../logged_in}}
-        <a href="/people/{{this.id}}/destroy"> destroy</a>
-      {{/if}}
-      <ul>
-        {{#if ../logged_in}}
-          <li>
-            <form action="/people/{{this.id}}/tasks/create" method="POST" style="display: inline">
-              <input type="text" name="task" placeholder="add task here">
-              <input type="submit" value"assign task">
-            </form>
-          </li>
-        {{/if}}
-
-        {{#each this.Tasks }}
-          <li>
-            {{this.task}}
-            {{#if ../../logged_in}}
-              <a href="/people/{{this.person_id}}/tasks/{{this.id}}/destroy">destroy</a>
-            {{/if}}
-          </li>
-        {{/each}}
-      </ul>
-    </li>
-  {{/each}}
-</ul>
