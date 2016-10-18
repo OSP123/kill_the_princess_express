@@ -61,17 +61,6 @@ In order to associate the models with each other, you need to change the models
 like this:
 
 ```js
-// task.js
-// ...
-classMethods: {
-  associate: function(models) {
-    Task.belongsTo(models.Person);
-  }
-}
-// ...
-```
-
-```js
 // user.js
 // ...
 classMethods: {
