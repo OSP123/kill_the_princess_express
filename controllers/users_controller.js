@@ -51,11 +51,17 @@ router.post('/login', function(req, res) {
         // and the user's email.
         req.session.user_email = user.email;
 
+        req.session.firstName = user.firstName;
+
+        req.session.lastName = user.lastName;
+
         res.render('index', {
 		      user_id: req.session.user_id,
 		      email: req.session.user_email,
 		      logged_in: req.session.logged_in,
-		      username: req.session.username
+		      username: req.session.username,
+		      firstName: req.session.firstName,
+		      lastName: req.session.lastName
 				});
       }
       // if the result is anything but true (password invalid)
@@ -92,7 +98,9 @@ router.post('/create', function(req,res) {
 					models.User.create({
 						email: req.body.email,
 						password_hash: hash,
-						username: req.body.username
+						username: req.body.username,
+						firstName: req.body.firstName,
+						lastName: req.body.lastName
 					})
 					// In a .then promise connected to that create method,
 					// save the user's information to req.session
@@ -112,12 +120,18 @@ router.post('/create', function(req,res) {
 	          // and the user's email.
 	          req.session.user_email = user.email;
 
+	          req.session.firstName = user.firstName;
+
+        		req.session.lastName = user.lastName;
+
 	          // redirect to home on login
 						res.render('index', {
 				      user_id: req.session.user_id,
 				      email: req.session.user_email,
 				      logged_in: req.session.logged_in,
-				      username: req.session.username
+				      username: req.session.username,
+				      firstName: req.session.firstName,
+		      		lastName: req.session.lastName
     				});
 					})
 				})

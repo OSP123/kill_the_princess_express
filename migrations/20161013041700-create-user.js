@@ -17,6 +17,7 @@ module.exports = {
       username: {
         type: Sequelize.STRING
       },
+
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE
@@ -28,6 +29,17 @@ module.exports = {
     });
   },
   down: function(queryInterface, Sequelize) {
-    return queryInterface.dropTable('Users');
+    // return queryInterface.dropTable('Users');
+    queryInterface.sequelize.query(
+      'SET FOREIGN_KEY_CHECKS = 0;', {raw: true}
+    ).then(function(results){
+      queryInterface.sequelize.query(
+        'DROP TABLE IF EXISTS Characters'
+      )
+    })
+    .then(function(){
+      return queryInterface.dropTable('Users');
+    })
+  }
   }
 };
