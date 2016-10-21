@@ -42,5 +42,12 @@ jQuery(document).ready(function() {
     	
     });
 
+    $("#choose_character").click(function(){
+        $.get( "/character", function( data ) {
+          // $( ".result" ).html( data );
+          alert( "Load was performed." );
+        });
+    })
+
 });
 

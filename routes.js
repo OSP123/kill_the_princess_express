@@ -9,11 +9,5 @@ module.exports = function(app){
 		app.use('/cats', cats_controller);
 		app.use('/users', users_controller);
 
-    app.get('/login', function(req, res){
-        res.render('login', {
-            title: 'Express Login'
-        });
-    });
-
     //other routes..
 }

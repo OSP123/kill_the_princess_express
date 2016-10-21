@@ -3,6 +3,12 @@ var models  = require('../models');
 var express = require('express');
 var router  = express.Router();
 
+app.get('/login', function(req, res){
+    res.render('login', {
+        title: 'Express Login'
+    });
+});
+
 //this is the users_controller.js file
 router.get('/signup-signin', function(req,res) {
 	res.render('users/signup-signin', {
