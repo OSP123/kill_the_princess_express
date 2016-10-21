@@ -41,18 +41,5 @@ jQuery(document).ready(function() {
     	});
     	
     });
-
-    $("#choose_character").click(function(){
-        $.ajax({
-           url: '/characters',
-           type: 'GET',
-           success: function(data) {
-              console.log(data);
-           },
-           error: function(){
-              console.log('Some error ocurred.');
-           }
-        });
-    })
 });
 

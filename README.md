@@ -13,7 +13,7 @@ Other technologies include:
 
 `mysql -u root`
 
-`create database monster_db;`
+`create database monster;`
 
 2. install modules in package.json
 
