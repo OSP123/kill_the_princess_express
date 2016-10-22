@@ -17,8 +17,8 @@
   "production": {
     "username": "awr1or7wrb0s54c1",
     "password": "vn579gvb797aygbj",
-    "database": "monster",
     "host": "m7wltxurw8d2n21q.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
-    "dialect": "mysql"
+    "dialect": "mysql",
+    "use_env_variable": "DATABASE_URL"
   }
 }
