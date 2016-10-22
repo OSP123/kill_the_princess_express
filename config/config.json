@@ -5,7 +5,6 @@
     "password": "acha123a",
     "database": "monster",
     "dialect": "mysql"
-
   },
   "test": {
     "username": "root",
