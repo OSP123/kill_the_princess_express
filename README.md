@@ -1,5 +1,7 @@
 # README For Kill Da Princess Application
 
+Link to Live Application: https://kill-da-princess.herokuapp.com/characters
+
 This repository demonstrates the usage of various technolgies for building a game application in the MVC architectural style. The technologies will be based on the Node.js engine and will utilize the Express.js framework.
 
 Other technologies include:

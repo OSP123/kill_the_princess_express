@@ -1,35 +1,25 @@
-<!--Video Section-->
-<div class="container-fluid">
-    <div class="embed-responsive embed-responsive-16by9">
-        <div id="background">
-	         <div id="login_header">
-							<p>
-								{{#unless logged_in}}
-									<a href="/users/signup-signin">Sign In or Sign Up</a>
-								{{/unless}}
+<div class="container-fluid" id="login-container">
+    <div class="row" id="background">
+       <div class="col-md-12" id="login_header">
+					<p>
+						{{#unless logged_in}}
+							<a href="/users/signup-signin">Sign In or Sign Up</a>
+						{{/unless}}
 
-								{{#if logged_in}}
-									<div>
-										<p>Welcome {{email}}! </p>
-										<p>You are user {{user_id}}.</p>
-										<a href="/characters"><button id="choose_character">Choose your Character!</button></a>
-									</div>
-								{{/if}}
-							</p>
-						</div>
-	          <iframe width="100" height="100" src="https://www.youtube.com/embed/SvG-ogdpBfg?start=55;rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1&amp;loop=1&amp;playlist=Rk6_hdRtJOE&amp;enablejsapi=1&version=3" id="i_song_name_i"></iframe>
+						{{#if logged_in}}
+							<div>
+								<p>Welcome {{email}}! </p>
+								<p>You are user {{user_id}}.</p>
+								<a href="/characters"><button id="choose_character">Choose your Character!</button></a>
+							</div>
+						{{/if}}
+					</p>
 				</div>
-    </div>          
+		</div>        
 </div>
 
 {{#if logged_in}}
 
 {{/if}}
-
-{{#unless logged_in}}
-  <p>
-    You must login to add a person.
-  </p>
-{{/unless}}
 
 

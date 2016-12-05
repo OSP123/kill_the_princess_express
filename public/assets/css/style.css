@@ -1,6 +1,15 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding: 0;
+  width: 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  transition: background-image 1.3s ease-in-out;
 }
 
 a {
@@ -8,5 +17,14 @@ a {
 }
 
 .thumbnail img{        
-   max-height: 147px;
+  max-height: 147px;
 }
+
+#login-container {
+  width: 50%;
+  height: 50%;
+  position: relative;
+  top: 30%;
+}
+
+
