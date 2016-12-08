@@ -39,7 +39,6 @@ jQuery(document).ready(function() {
     			$(this).removeClass('input-error');
     		}
     	});
-    	
     });
 });
 

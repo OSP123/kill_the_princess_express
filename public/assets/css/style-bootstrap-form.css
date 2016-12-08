@@ -6,7 +6,7 @@ body {
     color: #888;
     line-height: 30px;
     text-align: center;
-    background-image: url('/assets/img/pepe2.jpg');
+    background-image: url('/assets/img/login_background.jpg');
     background-size:100% auto;
 }
 
@@ -80,100 +80,13 @@ img { max-width: 100%; }
 .btn-link-2:hover, .btn-link-2:focus, 
 .btn-link-2:active, .btn-link-2:active:focus { outline: 0; opacity: 0.6; background: rgba(0, 0, 0, 0.3); color: #fff; }
 
-.btn-link-2 i {
-	padding-right: 5px;
-	vertical-align: middle;
-	font-size: 20px;
-	line-height: 20px;
-}
-
-
-/***** Top content *****/
-
-.top-content .text {
-	color: #fff;
-}
-
-.top-content .text h1 { color: #fff; }
-
-.top-content .description {
-	margin: 20px 0 10px 0;
-}
-
-.top-content .description p { opacity: 0.8; }
-
-.top-content .description a {
-	color: #fff;
-}
-.top-content .description a:hover, 
-.top-content .description a:focus { border-bottom: 1px dotted #fff; }
-
-.form-top {
-	overflow: hidden;
-	padding: 0 25px 15px 25px;
-	background: #444;
-	background: rgba(0, 0, 0, 0.35);
-	-moz-border-radius: 4px 4px 0 0; -webkit-border-radius: 4px 4px 0 0; border-radius: 4px 4px 0 0;
-	text-align: left;
-}
-
-.form-top-left {
-	float: left;
-	width: 75%;
-	padding-top: 25px;
-}
-
-.form-top-left h3 { margin-top: 0; color: #fff; }
-.form-top-left p { opacity: 0.8; color: #fff; }
-
-.form-top-right {
-	float: left;
-	width: 25%;
-	padding-top: 5px;
-	font-size: 66px;
-	color: #fff;
-	line-height: 100px;
-	text-align: right;
-	opacity: 0.3;
-}
-
-.form-bottom {
-	padding: 25px 25px 30px 25px;
-	background: #444;
-	background: rgba(0, 0, 0, 0.3);
-	-moz-border-radius: 0 0 4px 4px; -webkit-border-radius: 0 0 4px 4px; border-radius: 0 0 4px 4px;
-	text-align: left;
-}
-
-.form-bottom form textarea {
-	height: 100px;
-}
-
-.form-bottom form button.btn {
-	width: 100%;
-}
-
-.form-bottom form .input-error {
-	border-color: #19b9e7;
-}
-
-.social-login {
-	margin-top: 35px;
-}
-
 .social-login h3 {
 	color: #fff;
-}
-
-.social-login-buttons {
-	margin-top: 25px;
 }
 
 .middle-border {
 	min-height: 300px;
 	margin-top: 170px;
-	border-right: 1px solid #fff;
-	border-right: 1px solid rgba(255, 255, 255, 0.6);
 }
 
 
@@ -208,8 +121,7 @@ footer a:hover, footer a:focus { color: #fff; border-bottom: 1px dotted #fff; }
 
 @media (max-width: 767px) {
 	
-	.middle-border { min-height: auto; margin: 65px 30px 0 30px; border-right: 0; 
-						border-top: 1px solid #fff; border-top: 1px solid rgba(255, 255, 255, 0.6); }
+	.middle-border { min-height: auto; margin: 65px 30px 0 30px;}
 	
 }
 
@@ -217,5 +129,27 @@ footer a:hover, footer a:focus { color: #fff; border-bottom: 1px dotted #fff; }
 	
 	h1, h2 { font-size: 32px; }
 
+}
+
+/************ Custom Code *************/
+.login_box {
+	background-image: url('/assets/img/login_box1.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	padding: 6em 2em;
+  padding-top: 7em;
+}
+
+.signup_box {
+	background-image: url('/assets/img/login_box2_sign_in.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	padding: 7em;
+}
+
+.form-bottom {
+	width: 60%;
+  margin-left: auto;
+  margin-right: auto;
 }
 

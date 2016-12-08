@@ -16,15 +16,45 @@ a {
   color: #00B7FF;
 }
 
+.thumbnail {
+  background: none;
+  border: none;
+}
+
 .thumbnail img{        
   max-height: 147px;
 }
 
-#login-container {
+#login_container {
   width: 50%;
   height: 50%;
   position: relative;
   top: 30%;
+
+}
+
+#login_header {
+  text-align: center;
+  border: solid 1px white;
+  background: white;
+  padding: 10%;
+  border-radius: 5px;
+  opacity: 0.9;
+}
+
+#background {
+  margin-right: auto;
+  margin-left: auto;
+  width: 50%;
+}
+
+#character_container {
+  background-image: url("../img/character-select.jpg");
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
 

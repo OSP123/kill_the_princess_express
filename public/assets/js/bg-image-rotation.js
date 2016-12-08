@@ -11,7 +11,7 @@ jQuery(document).ready(function() {
         $('body').css('backgroundImage', function () {
             setTimeout(function () {
             }, 3000);
-            return 'url(assets/img/city_' + img_array[index] + '.jpg)';
+            return 'url(/assets/img/city_' + img_array[index] + '.jpg)';
         });
         setTimeout(changeBg, interval);
     })();
