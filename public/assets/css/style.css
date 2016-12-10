@@ -8,12 +8,17 @@ body {
   padding: 0;
   width: 100%;
   background-size: 100% 100%;
-  background-repeat: no-repeat;
   transition: background-image 1.3s ease-in-out;
 }
 
 a {
   color: #00B7FF;
+}
+
+/* Character Select CSS Start */
+
+#character_body {
+   background-image: url("/assets/img/character_select_background.jpg");
 }
 
 .thumbnail {
@@ -49,7 +54,7 @@ a {
 }
 
 #character_container {
-  background-image: url("../img/character-select.jpg");
+  background-image: url("/assets/img/character_select_foreground.png");
   margin: 0 auto;
   width: 100%;
   height: 100%;
@@ -57,4 +62,19 @@ a {
   background-repeat: no-repeat;
 }
 
+#first_character {
+  background-image: url("/assets/img/character_select_door1.jpg");
+}
 
+#second_character {
+  background-image: url("/assets/img/character_select_door2.jpg");
+}
+
+#third_character {
+  background-image: url("/assets/img/character_select_door3.jpg");
+}
+
+#fourth_character {
+  background-image: url("/assets/img/character_select_door4.jpg");
+}
+/* Character Select CSS End */

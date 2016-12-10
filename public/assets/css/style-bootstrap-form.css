@@ -133,7 +133,7 @@ footer a:hover, footer a:focus { color: #fff; border-bottom: 1px dotted #fff; }
 
 /************ Custom Code *************/
 .login_box {
-	background-image: url('/assets/img/login_box1.png');
+	background-image: url('/assets/img/login_box.png');
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	padding: 6em 2em;
@@ -141,15 +141,26 @@ footer a:hover, footer a:focus { color: #fff; border-bottom: 1px dotted #fff; }
 }
 
 .signup_box {
-	background-image: url('/assets/img/login_box2_sign_in.png');
+	background-image: url('/assets/img/sign_up.png');
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	padding: 7em;
 }
 
+.first_form_box {
+	width: 80%;
+	margin-left: auto;
+  margin-right: auto;
+}
+
 .form-bottom {
-	width: 60%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.logo_container {
+  width: 100%;
+	text-align: center;
+  position: relative;
 }
 
