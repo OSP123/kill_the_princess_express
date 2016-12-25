@@ -56,7 +56,6 @@ a {
 #character_container {
   background-image: url("/assets/img/character_select_foreground.png");
   margin: 0 auto;
-  width: 100%;
   height: 100%;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -77,4 +76,21 @@ a {
 #fourth_character {
   background-image: url("/assets/img/character_select_door4.jpg");
 }
+/*
+.characters_container {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}*/
+
+.character {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  left: 86px;
+  top: 51px;
+  width: 210px;
+  height: 385px;
+}
+
 /* Character Select CSS End */
