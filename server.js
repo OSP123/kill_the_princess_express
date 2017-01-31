@@ -1,19 +1,20 @@
 // Dependencies
 // ============
-var express = require('express');
-var path = require('path');
-var favicon = require('serve-favicon');
-var logger = require('morgan');
-var cookieParser = require('cookie-parser'); // for working with cookies
-var bodyParser = require('body-parser');
-var session = require('express-session'); 
+var express        = require('express');
+var socket_io      = require('socket.io');
+var path           = require('path');
+var favicon        = require('serve-favicon');
+var logger         = require('morgan');
+var cookieParser   = require('cookie-parser'); // for working with cookies
+var bodyParser     = require('body-parser');
+var session        = require('express-session'); 
 var methodOverride = require('method-override'); // for deletes in express
 
 // Express settings
 // ================
 
 // instantiate our app
-var app = express();
+var app            = express();
 
 // override POST to have DELETE and PUT
 app.use(methodOverride('_method'))

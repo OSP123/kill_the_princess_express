@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 
-
 // Express can launch a www executable to handle certain tasks.
 // www goes in bin (sometimes .bin to keep it hidden)
 
@@ -26,4 +25,6 @@ models.sequelize.sync().then(function () {
   	// then save a log of the listening to our debugger.
     debug('Express server listening on port ' + server.address().port);
   });
+  var io = require('socket.io').listen(server);
+	require('../sockets/base')(io);
 });
