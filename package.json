@@ -18,7 +18,8 @@
     "mysql": "^2.11.1",
     "sequelize": "^3.3.2",
     "sequelize-cli": "^1.9.2",
-    "serve-favicon": "~2.3.0"
+    "serve-favicon": "~2.3.0",
+    "socket.io": "^1.7.2"
   },
   "devDependencies": {
     "browserify": "^13.1.0",
